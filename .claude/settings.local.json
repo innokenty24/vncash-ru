@@ -24,7 +24,8 @@
       "mcp__Claude_in_Chrome__javascript_tool",
       "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-search",
       "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-fetch",
-      "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-update-page"
+      "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-update-page",
+      "Bash(nslookup -type=TXT vncash.ru 8.8.8.8)"
     ]
   }
 }
