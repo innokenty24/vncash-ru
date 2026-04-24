@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VNCash Danang — Обмен валют во Вьетнаме | Дананг · Нячанг · весь Вьетнам</title>
+<meta name="description" content="Обмен во Вьетнаме: RUB, CNY, USDT безналичные и USD наличные нового образца на донги. Доставка в Дананге и Нячанге, выдача через банкоматы или на счёт по всему Вьетнаму." />
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="favicon.svg" />
+<meta name="theme-color" content="#0b1020" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="VNCash Danang — Обмен валют во Вьетнаме" />
+<meta property="og:description" content="RUB, CNY, USDT безналично и USD наличные → донги. Доставка: Дананг, Нячанг. Выдача по всему Вьетнаму." />
+<meta property="og:image" content="og-cover.svg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="VNCash Danang" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="VNCash Danang — Обмен валют во Вьетнаме" />
+<meta name="twitter:description" content="RUB, CNY, USDT безналично и USD наличные → донги. Дананг · Нячанг · весь Вьетнам." />
+<meta name="twitter:image" content="og-cover.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="24" height="24">
+          <text x="20" y="30" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="800" fill="#fff" text-anchor="middle">₫</text>
+          <circle cx="32" cy="8" r="4" fill="#ffcd00"/>
+        </svg>
+      </span>
+      <span class="logo__text">VNCash <em>Danang</em></span>
+    </a>
+    <nav class="nav">
+      <a href="#rates">Курсы</a>
+      <a href="#how">Как это работает</a>
+      <a href="#why">Почему мы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Написать в Telegram</a>
+    <button class="burger" aria-label="Меню">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <div class="badge">🇻🇳 Дананг · Нячанг · весь Вьетнам</div>
+      <h1>Обмен валют во&nbsp;Вьетнаме по&nbsp;лучшему курсу</h1>
+      <p class="hero__lead">
+        Принимаем <b>RUB, CNY, USDT</b> безналично и <b>USD наличными нового&nbsp;образца</b>.
+        Выдаём донги: доставка в&nbsp;Дананге и&nbsp;Нячанге, банкоматы или перевод на&nbsp;счёт по всему&nbsp;Вьетнаму.
+      </p>
+      <div class="hero__cta">
+        <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.3 8.77 19c.38 0 .55-.16.75-.36l1.8-1.72 3.74 2.73c.69.38 1.18.18 1.36-.64l2.47-11.6c.24-1.03-.37-1.43-1.04-1.18L2.7 10.1c-1 .39-.98.95-.17 1.2l3.92 1.22 9.1-5.74c.43-.28.82-.12.5.16L9.04 15.3z"/></svg>
+          Telegram
+        </a>
+        <a href="https://vk.com/obmen_danang" target="_blank" rel="noopener" class="btn btn--ghost">
+          ВКонтакте
+        </a>
+        <a href="https://www.facebook.com/obmendanang" target="_blank" rel="noopener" class="btn btn--ghost">
+          Facebook
+        </a>
+      </div>
+      <ul class="hero__points">
+        <li>✅ Курс лучше, чем в банках и аэропорту</li>
+        <li>✅ Принимаем только безналичные RUB, CNY, USDT</li>
+        <li>✅ USD — только наличные нового образца</li>
+        <li>✅ Выдача по всему Вьетнаму: банкомат или счёт</li>
+      </ul>
+    </div>
+
+    <div class="hero__card">
+      <h3>Быстрый расчёт</h3>
+      <div class="calc">
+        <div class="calc__row">
+          <label>Вы отдаёте</label>
+          <div class="calc__field">
+            <input type="number" id="amountFrom" value="100" min="0" />
+            <select id="currencyFrom">
+              <option value="RUB">RUB · Рубль (безнал)</option>
+              <option value="CNY">CNY · Юань (безнал)</option>
+              <option value="USDT">USDT · Tether (крипто)</option>
+              <option value="USD">USD · Доллар (наличные, новый образец)</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc__arrow">↓</div>
+        <div class="calc__row">
+          <label>Вы получаете</label>
+          <div class="calc__field">
+            <input type="text" id="amountTo" value="" readonly />
+            <div class="calc__static">VND</div>
+          </div>
+        </div>
+        <p class="calc__note" id="calcRate"></p>
+        <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="btn btn--primary btn--block">Зафиксировать курс</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rates" class="section rates">
+  <div class="container">
+    <div class="section__head">
+      <h2>Курсы обмена на&nbsp;сегодня</h2>
+      <p>Курсы обновляются ежедневно. Финальный курс фиксируется в Telegram перед сделкой.</p>
+    </div>
+    <div class="rates__grid">
+      <div class="rate"><div class="rate__flag">🇷🇺</div><div class="rate__code">RUB · безнал</div><div class="rate__val" data-code="RUB">—</div><div class="rate__unit">₫ за 1 RUB</div></div>
+      <div class="rate"><div class="rate__flag">🇨🇳</div><div class="rate__code">CNY · безнал</div><div class="rate__val" data-code="CNY">—</div><div class="rate__unit">₫ за 1 CNY</div></div>
+      <div class="rate"><div class="rate__flag">₮</div><div class="rate__code">USDT · крипто</div><div class="rate__val" data-code="USDT">—</div><div class="rate__unit">₫ за 1 USDT</div></div>
+      <div class="rate"><div class="rate__flag">🇺🇸</div><div class="rate__code">USD · нал. новый</div><div class="rate__val" data-code="USD">—</div><div class="rate__unit">₫ за 1 USD</div></div>
+    </div>
+    <p class="rates__updated" id="ratesUpdated"></p>
+    <div class="rates__tiers">
+      <div class="tier tier--vip">
+        <div class="tier__title">🎉 Улучшенный курс</div>
+        <div class="tier__amount">от 100 000 ₽ · от 1 200 USDT</div>
+        <div class="tier__desc">Курс лучше на&nbsp;+2 ₫ за&nbsp;рубль и&nbsp;+100 ₫ за&nbsp;USDT.</div>
+      </div>
+      <div class="tier tier--best">
+        <div class="tier__title">✅ Стандартный курс</div>
+        <div class="tier__amount">от 20 000 ₽ эквивалента</div>
+        <div class="tier__desc">Курс с таблицы выше — без комиссий.</div>
+      </div>
+      <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="tier tier--link">
+        <div class="tier__title">⚠️ Маленькие суммы</div>
+        <div class="tier__amount">менее 20 000 ₽ эквивалента</div>
+        <div class="tier__desc">Фиксированная комиссия — узнать в&nbsp;Telegram →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section services">
+  <div class="container">
+    <div class="section__head">
+      <h2>Что мы делаем</h2>
+      <p>Полный спектр финансовых услуг для туристов, экспатов и зимовщиков во Вьетнаме.</p>
+    </div>
+    <div class="services__grid">
+      <div class="service">
+        <div class="service__ico">💳</div>
+        <h3>Безналичные RUB</h3>
+        <p>Переводы с российских карт и счетов: Сбербанк, Тинькофф, Альфа, СБП. Выдаём донги во&nbsp;Вьетнаме.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">🇨🇳</div>
+        <h3>Безналичные CNY</h3>
+        <p>Приём юаней через Alipay, WeChat Pay и банковские переводы в Китае. Быстрый расчёт в донгах.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">₿</div>
+        <h3>USDT (крипто)</h3>
+        <p>Принимаем USDT — TRC20, ERC20, BEP20. Обмен по актуальному курсу биржи, без скрытых спредов.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">💵</div>
+        <h3>USD наличные (новый образец)</h3>
+        <p>Только купюры нового образца (серии 2013+), без надрывов и пятен. Крупные номиналы — по лучшему курсу.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">🚗</div>
+        <h3>Доставка в Дананге и Нячанге</h3>
+        <p>Привезём наличные донги в отель или апартаменты. По другим городам — выдача через банкомат или на&nbsp;счёт.</p>
+        <p class="service__tip">🎁 <b>Бесплатная доставка</b> при обмене от <b>20 000 ₽</b>.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">🏧</div>
+        <h3>Выдача по всему Вьетнаму</h3>
+        <p>Снимете донги в ближайшем банкомате <b>Vietcombank, BIDV или OCB</b> либо получите переводом на вьетнамский счёт — Ханой, Хошимин, Хойан, Фукуок и любой другой город.</p>
+        <p class="service__tip">💡 Для сумм <b>от 6 млн&nbsp;₫</b> выгоднее снимать через <b>Vietcombank</b> — выше лимит за одну операцию.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">📲</div>
+        <h3>Пополнение вьетнамских счетов и кошельков</h3>
+        <p>Пополним ваш счёт в <b>Vietcombank, Techcombank, VPBank</b> и других банках Вьетнама, а также электронные кошельки — <b>MoMo, ZaloPay, VNPay</b> — по всему Вьетнаму.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">🐼</div>
+        <h3>Alipay · юани</h3>
+        <p>Пополним ваш <b>Alipay / WeChat Pay</b> в Китае. И наоборот — меняем ваши юани Alipay на <b>рубли, USDT или донги</b>.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">🔄</div>
+        <h3>Донги → рубли переводом</h3>
+        <p>У вас остались наличные донги? Поменяем их на <b>рубли с переводом</b> на вашу российскую карту или счёт. Без комиссии за перевод.</p>
+      </div>
+      <div class="service">
+        <div class="service__ico">💵</div>
+        <h3>RUB, донги, USDT → наличные USD</h3>
+        <p>Выдаём <b>наличные доллары США нового образца</b> в обмен на рубли (безнал), донги или USDT. Удобно перед вылетом из Вьетнама.</p>
+      </div>
+      <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="service service--link">
+        <div class="service__ico">💬</div>
+        <h3>Не нашли свою задачу?</h3>
+        <p>Напишите в&nbsp;Telegram — обсудим нестандартный обмен, крупные суммы или срочную ночную доставку →</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section how">
+  <div class="container">
+    <div class="section__head">
+      <h2>Как проходит обмен</h2>
+      <p>Три простых шага — от заявки до наличных у&nbsp;вас в&nbsp;руках.</p>
+    </div>
+    <div class="how__grid">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>Напишите нам</h3>
+        <p>В Telegram, ВКонтакте или Facebook. Укажите сумму, валюту и район Дананга.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>Фиксируем курс</h3>
+        <p>Согласуем курс, место и время встречи. Или оформим доставку к вам в отель.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>Получаете донги</h3>
+        <p>Встречаемся — пересчитываете наличные при вас. Всё прозрачно и безопасно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="section why">
+  <div class="container">
+    <div class="section__head">
+      <h2>Почему нам доверяют</h2>
+      <p>VNCash Danang — проверенный обмен с русскоязычной поддержкой в Центральном Вьетнаме.</p>
+    </div>
+    <div class="why__grid">
+      <div class="why__item"><b>с 2022</b><span>работаем в Дананге и Нячанге</span></div>
+      <div class="why__item"><b>10 000+</b><span>довольных клиентов за всё время</span></div>
+      <div class="why__item"><b>7/7</b><span>работаем без выходных</span></div>
+      <div class="why__item"><b>0%</b><span>комиссий и скрытых платежей</span></div>
+      <div class="why__item"><b>RU · EN · VI</b><span>русскоязычная поддержка</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews">
+  <div class="container">
+    <div class="section__head">
+      <h2>Отзывы наших клиентов</h2>
+      <p>Собрано из групп ВКонтакте, Telegram и Facebook.</p>
+    </div>
+    <div class="reviews__grid">
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Ребята молодцы, понял, что не хватает денег в клубе, привезли по факту оплаты в ночь, спасибо»</p>
+        <div class="review__author">— Maksim Myadelets</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Спасибо большое! Всё на высшем уровне! Быстро и качественно. Отличный сервис 💙»</p>
+        <div class="review__author">— Elena · август 2023</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Привет! Я нахожусь в РФ, надо было срочно отправить деньги на вьет карту, Крис выручил, как и всегда 🙌»</p>
+        <div class="review__author">— Sandaara Nikolaeva · сентябрь 2023</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Не первый раз меняю тут и сегодня тоже, курс очень хороший. А так всё отлично. Советую! 👍 ✅»</p>
+        <div class="review__author">— Alexander · сентябрь 2023</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Я постоянно меняю, в течении часа обычно привозят деньги 👍»</p>
+        <div class="review__author">— Сардаана · март 2024</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Спасибо большое за помощь, курс самый выгодный, очень выручили — не только помогли с оплатой жилья, но ещё и снизили стоимость, вникнув в детали платежа 😊»</p>
+        <div class="review__author">— Akciniya Molchanova · июнь 2024</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>«Спасибо большое! Получила перевод через QR-код, всегда были на связи, быстро отвечали и отправили инструкцию 😌»</p>
+        <div class="review__author">— Ana · январь 2025</div>
+      </div>
+    </div>
+    <p class="reviews__note">
+      Все отзывы — из нашего <a href="https://t.me/vncash_danang" target="_blank" rel="noopener">Telegram-чата</a>. Там же вы можете оставить свой.
+    </p>
+  </div>
+</section>
+
+<section id="faq" class="section faq">
+  <div class="container">
+    <div class="section__head">
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq__list">
+      <details><summary>Какие валюты вы принимаете?</summary><p>Безналично: <b>RUB, CNY, USDT</b>. Наличными — только <b>USD нового образца</b> (серии 2013 и новее, без повреждений). Другие наличные валюты мы не принимаем.</p></details>
+      <details><summary>В каких городах доставка?</summary><p>Личная доставка донгов — только <b>Дананг и Нячанг</b>. В остальных городах Вьетнама (Ханой, Хошимин, Хойан, Фукуок, Далат и др.) — выдача через <b>банкомат</b> или <b>переводом на ваш вьетнамский счёт</b>.</p></details>
+      <details><summary>Почему USD только нового образца?</summary><p>Вьетнамские банки и обменники не принимают старые, надорванные или помеченные купюры. Мы работаем только с чистыми банкнотами серий 2013+ (крупные лицевые портреты), чтобы гарантировать курс.</p></details>
+      <details><summary>Как происходит выдача по Вьетнаму?</summary><p>После перевода RUB/CNY/USDT мы отправим донги на ваш счёт во вьетнамском банке (Vietcombank, Techcombank, VPBank и др.) или сообщим код для снятия через банкомат.</p></details>
+      <details><summary>В каких банкоматах можно снять донги?</summary><p>Мы работаем с банкоматами <b>Vietcombank</b>, <b>BIDV</b> и <b>OCB</b> — они есть в любом городе Вьетнама. Для сумм <b>свыше 6 млн ₫</b> рекомендуем <b>Vietcombank</b>: выше лимит за одну операцию, меньше снятий — меньше комиссий банкомата.</p></details>
+      <details><summary>Есть ли минимальный лимит?</summary><p>Минимального лимита нет — поменяем любую сумму. Для маленьких сумм применяется фиксированная комиссия, подробности в Telegram.</p></details>
+      <details><summary>Как считается курс для разных сумм?</summary><p><b>Стандартный курс</b> (тот, что указан на сайте) действует на суммы от <b>20 000 до 100 000 ₽</b> в эквиваленте и выше. Для меньших сумм применяется <b>фиксированная комиссия</b> — точный размер уточним в Telegram перед сделкой.</p></details>
+      <details><summary>Есть ли комиссия?</summary><p>Комиссии нет. Наш доход заложен в курс, который всё равно выгоднее, чем в банках и отелях.</p></details>
+      <details><summary>Какой режим работы?</summary><p>Работаем ежедневно, без выходных. <b>Доставка</b> по Дананг и Нячанг — с <b>10:00 до 20:00</b>. <b>Выдача через банкоматы и переводы на счёт</b> — с <b>09:00 до 22:00</b> (время вьетнамское, UTC+7).</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="section contacts">
+  <div class="container">
+    <div class="section__head">
+      <h2>Связаться с&nbsp;нами</h2>
+      <p>Выберите удобный мессенджер — ответим в течение 5 минут.</p>
+    </div>
+    <div class="contacts__grid">
+      <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="contact contact--tg">
+        <div class="contact__ico">✈️</div>
+        <div class="contact__label">Telegram</div>
+        <div class="contact__val">@vncash_danang</div>
+      </a>
+      <a href="https://vk.com/obmen_danang" target="_blank" rel="noopener" class="contact contact--vk">
+        <div class="contact__ico">🅥🅚</div>
+        <div class="contact__label">ВКонтакте</div>
+        <div class="contact__val">vk.com/obmen_danang</div>
+      </a>
+      <a href="https://www.facebook.com/obmendanang" target="_blank" rel="noopener" class="contact contact--fb">
+        <div class="contact__ico">📘</div>
+        <div class="contact__label">Facebook</div>
+        <div class="contact__val">facebook.com/obmendanang</div>
+      </a>
+    </div>
+    <div class="contacts__hours">
+      <div class="hours__row">🚗 Доставка (Дананг, Нячанг): ежедневно <b>10:00 – 20:00</b></div>
+      <div class="hours__row">🏧 Банкоматы и перевод на счёт: ежедневно <b>09:00 – 22:00</b></div>
+      <div class="hours__note">Время вьетнамское (UTC+7)</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <div class="logo logo--light">
+        <span class="logo__mark">₫</span>
+        <span class="logo__text">VNCash <em>Danang</em></span>
+      </div>
+      <p>Обмен валют и финансовые услуги в&nbsp;Дананге, Вьетнам.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <a href="#rates">Курсы</a>
+      <a href="#services">Услуги</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+    <div>
+      <h4>Соцсети</h4>
+      <a href="https://t.me/vncash_danang" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://vk.com/obmen_danang" target="_blank" rel="noopener">ВКонтакте</a>
+      <a href="https://www.facebook.com/obmendanang" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div>
+      <h4>Локации</h4>
+      <span>🚗 Доставка: Дананг</span>
+      <span>🚗 Доставка: Нячанг</span>
+      <span>🏧 Банкомат / счёт — весь Вьетнам</span>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    © 2022–<span id="year"></span> VNCash Danang. Все права защищены.
+  </div>
+</footer>
+
+<a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="fab" aria-label="Написать в Telegram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.3 8.77 19c.38 0 .55-.16.75-.36l1.8-1.72 3.74 2.73c.69.38 1.18.18 1.36-.64l2.47-11.6c.24-1.03-.37-1.43-1.04-1.18L2.7 10.1c-1 .39-.98.95-.17 1.2l3.92 1.22 9.1-5.74c.43-.28.82-.12.5.16L9.04 15.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
