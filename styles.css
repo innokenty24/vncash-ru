@@ -97,8 +97,8 @@ p{margin:0 0 1em;color:var(--muted)}
 .calc__row{margin-bottom:12px}
 .calc__row label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:6px;font-weight:500}
 .calc__field{display:flex;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#f7f8fc}
-.calc__field input{flex:1;border:0;padding:16px;font-size:1.15rem;font-weight:600;background:transparent;outline:none;min-width:0;font-family:inherit;color:var(--text)}
-.calc__field select, .calc__static{background:#fff;border:0;border-left:1px solid var(--border);padding:0 16px;font-weight:600;cursor:pointer;font-family:inherit;font-size:.95rem;color:var(--text)}
+.calc__field input{flex:1 1 120px;border:0;padding:16px;font-size:1.15rem;font-weight:600;background:transparent;outline:none;min-width:100px;font-family:inherit;color:var(--text);width:100%}
+.calc__field select, .calc__static{background:#fff;border:0;border-left:1px solid var(--border);padding:0 14px;font-weight:600;cursor:pointer;font-family:inherit;font-size:.92rem;color:var(--text);max-width:55%}
 .calc__static{display:flex;align-items:center;color:var(--primary)}
 .calc__arrow{text-align:center;color:var(--muted);font-size:1.2rem;margin:4px 0}
 .calc__note{font-size:.82rem;color:var(--muted);margin:10px 0 16px;text-align:center}
