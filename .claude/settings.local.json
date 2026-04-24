@@ -17,7 +17,14 @@
       "Bash(nslookup vncash.ru 1.1.1.1)",
       "Bash(curl -sSL -o /dev/null -w \"HTTP: %{http_code} | URL: %{url_effective}\\\\n\" http://vncash.ru)",
       "Bash(curl -sSI http://vncash.ru)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -sS \"http://vncash.ru/?v=$\\(date +%s\\)\")",
+      "Bash(curl -sS \"http://vncash.ru/styles.css?v=$\\(date +%s\\)\")",
+      "Bash(curl -sS \"http://vncash.ru/styles.css?nocache=$\\(date +%s%N\\)\")",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-search",
+      "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-fetch",
+      "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-update-page"
     ]
   }
 }
