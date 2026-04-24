@@ -42,15 +42,19 @@
       </span>
       <span class="logo__text">VNCash <em>Danang</em></span>
     </a>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="#rates">Курсы</a>
+      <a href="#services">Услуги</a>
       <a href="#how">Как это работает</a>
       <a href="#why">Почему мы</a>
       <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
+      <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="btn btn--primary nav__cta">Написать в Telegram</a>
     </nav>
-    <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Написать в Telegram</a>
-    <button class="burger" aria-label="Меню">☰</button>
+    <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="btn btn--primary btn--sm header__cta">Написать в Telegram</a>
+    <button class="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -332,17 +336,23 @@
     </div>
     <div class="contacts__grid">
       <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="contact contact--tg">
-        <div class="contact__ico">✈️</div>
+        <div class="contact__ico">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.04 15.3 8.77 19c.38 0 .55-.16.75-.36l1.8-1.72 3.74 2.73c.69.38 1.18.18 1.36-.64l2.47-11.6c.24-1.03-.37-1.43-1.04-1.18L2.7 10.1c-1 .39-.98.95-.17 1.2l3.92 1.22 9.1-5.74c.43-.28.82-.12.5.16L9.04 15.3z"/></svg>
+        </div>
         <div class="contact__label">Telegram</div>
         <div class="contact__val">@vncash_danang</div>
       </a>
       <a href="https://vk.com/obmen_danang" target="_blank" rel="noopener" class="contact contact--vk">
-        <div class="contact__ico">🅥🅚</div>
+        <div class="contact__ico">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.16 17.04c-5.04 0-8.22-3.54-8.35-9.43h2.58c.09 4.32 2.04 6.15 3.54 6.53V7.61h2.47v3.72c1.44-.15 2.95-1.81 3.46-3.72h2.44c-.39 2.35-2 4-3.14 4.68 1.14.55 2.97 1.99 3.67 4.75h-2.69c-.55-1.72-1.93-3.06-3.74-3.24v3.24h-.24z"/></svg>
+        </div>
         <div class="contact__label">ВКонтакте</div>
         <div class="contact__val">vk.com/obmen_danang</div>
       </a>
       <a href="https://www.facebook.com/obmendanang" target="_blank" rel="noopener" class="contact contact--fb">
-        <div class="contact__ico">📘</div>
+        <div class="contact__ico">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </div>
         <div class="contact__label">Facebook</div>
         <div class="contact__val">facebook.com/obmendanang</div>
       </a>
@@ -359,7 +369,12 @@
   <div class="container footer__inner">
     <div>
       <div class="logo logo--light">
-        <span class="logo__mark">₫</span>
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="24" height="24">
+            <text x="20" y="30" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="800" fill="#fff" text-anchor="middle">₫</text>
+            <circle cx="32" cy="8" r="4" fill="#ffcd00"/>
+          </svg>
+        </span>
         <span class="logo__text">VNCash <em>Danang</em></span>
       </div>
       <p>Обмен валют и финансовые услуги в&nbsp;Дананге, Вьетнам.</p>
@@ -385,7 +400,7 @@
     </div>
   </div>
   <div class="footer__bottom">
-    © 2022–<span id="year"></span> VNCash Danang. Все права защищены.
+    © 2022&ndash;<span id="year"></span>&nbsp;VNCash&nbsp;Danang. Все права защищены.
   </div>
 </footer>
 
