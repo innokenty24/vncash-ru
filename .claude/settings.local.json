@@ -25,7 +25,12 @@
       "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-search",
       "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-fetch",
       "mcp__c9a3c6cc-278c-405b-adda-887bc8c8e9d4__notion-update-page",
-      "Bash(nslookup -type=TXT vncash.ru 8.8.8.8)"
+      "Bash(nslookup -type=TXT vncash.ru 8.8.8.8)",
+      "Bash(curl -sSI https://vncash.ru)",
+      "Bash(curl -sS -o /dev/null -w \"HTTPS: %{http_code}\\\\nSSL: %{ssl_verify_result}\\\\n\" https://vncash.ru)",
+      "Bash(curl -kv https://vncash.ru)",
+      "Bash(openssl s_client -servername vncash.ru -connect vncash.ru:443)",
+      "Bash(openssl x509 *)"
     ]
   }
 }

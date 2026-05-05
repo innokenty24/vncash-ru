@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Обмен валют во Вьетнаме — Дананг, Нячанг | VNCash — рубли, USDT, юани, доллары на донги</title>
-<meta name="description" content="Обмен валют во Вьетнаме по лучшему курсу: рубли (безнал, СБП, Сбер, Тинькофф), USDT, юани (Alipay) и доллары наличные → донги. Доставка в Дананге и Нячанге, выдача через банкоматы Vietcombank/BIDV/OCB по всему Вьетнаму. Работаем с 2022." />
-<meta name="keywords" content="обмен валют вьетнам, обмен валют дананг, обмен валют нячанг, обмен рублей на донги, обмен usdt вьетнам, курс донга дананг, обменник дананг, обменник нячанг, рубли донги вьетнам, сбп вьетнам, перевод с карты вьетнам" />
+<title>Обмен валют во Вьетнаме — Дананг, Нячанг | VNCash</title>
+<meta name="description" content="Обмен RUB, USDT, CNY и USD на донги во Вьетнаме. Доставка в Дананге и Нячанге, выдача через банкоматы Vietcombank/BIDV/OCB по всему Вьетнаму." />
 <meta name="robots" content="index, follow" />
 <meta name="yandex-verification" content="456166cab07e8e5e" />
 <meta name="google-site-verification" content="" />
@@ -33,7 +32,44 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vncash.ru/#org",
+      "name": "VNCash Vietnam",
+      "url": "https://vncash.ru/",
+      "logo": "https://vncash.ru/favicon.svg",
+      "sameAs": [
+        "https://t.me/vncash_danang",
+        "https://vk.com/obmen_danang",
+        "https://www.facebook.com/obmendanang"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vncash.ru/#site",
+      "url": "https://vncash.ru/",
+      "name": "VNCash Vietnam — Обмен валют во Вьетнаме",
+      "inLanguage": "ru",
+      "publisher": {"@id": "https://vncash.ru/#org"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vncash.ru/#faq",
+      "mainEntity": [
+        {"@type":"Question","name":"Какие валюты вы принимаете?","acceptedAnswer":{"@type":"Answer","text":"Безналично: RUB, CNY, USDT. Наличными — только USD нового образца (серии 2013 и новее, без повреждений). Другие наличные валюты мы не принимаем."}},
+        {"@type":"Question","name":"В каких городах доставка?","acceptedAnswer":{"@type":"Answer","text":"Личная доставка донгов — только Дананг и Нячанг. В остальных городах Вьетнама (Ханой, Хошимин, Хойан, Фукуок, Далат и др.) — выдача через банкомат или переводом на ваш вьетнамский счёт."}},
+        {"@type":"Question","name":"Почему USD только нового образца?","acceptedAnswer":{"@type":"Answer","text":"Вьетнамские банки и обменники не принимают старые, надорванные или помеченные купюры. Мы работаем только с чистыми банкнотами серий 2013+ (крупные лицевые портреты), чтобы гарантировать курс."}},
+        {"@type":"Question","name":"Как происходит выдача по Вьетнаму?","acceptedAnswer":{"@type":"Answer","text":"После перевода RUB/CNY/USDT мы отправим донги на ваш счёт во вьетнамском банке (Vietcombank, Techcombank, VPBank и др.) или сообщим код для снятия через банкомат."}},
+        {"@type":"Question","name":"В каких банкоматах можно снять донги?","acceptedAnswer":{"@type":"Answer","text":"Мы работаем с банкоматами Vietcombank, BIDV и OCB — они есть в любом городе Вьетнама. Для сумм свыше 6 млн ₫ рекомендуем Vietcombank: выше лимит за одну операцию."}},
+        {"@type":"Question","name":"Есть ли минимальный лимит?","acceptedAnswer":{"@type":"Answer","text":"Минимального лимита нет — поменяем любую сумму. Для маленьких сумм применяется фиксированная комиссия, подробности в Telegram."}},
+        {"@type":"Question","name":"Есть ли комиссия?","acceptedAnswer":{"@type":"Answer","text":"Комиссии нет. Наш доход заложен в курс, который всё равно выгоднее, чем в банках и отелях."}},
+        {"@type":"Question","name":"Какой режим работы?","acceptedAnswer":{"@type":"Answer","text":"Работаем ежедневно. Доставка по Дананг и Нячанг — с 10:00 до 20:00. Выдача через банкоматы и переводы на счёт — с 09:00 до 22:00 (UTC+7)."}}
+      ]
+    },
+    {
   "@type": "FinancialService",
+  "@id": "https://vncash.ru/#business",
   "name": "VNCash Vietnam",
   "description": "Обмен валют во Вьетнаме: RUB, CNY, USDT безналично и USD наличные нового образца на донги. Доставка в Дананге и Нячанге, выдача через банкоматы и на счёт по всему Вьетнаму.",
   "url": "https://vncash.ru/",
@@ -67,6 +103,8 @@
     "reviewCount": "7",
     "bestRating": "5"
   }
+    }
+  ]
 }
 </script>
 
@@ -137,10 +175,11 @@
       <h3>Быстрый расчёт</h3>
       <div class="calc">
         <div class="calc__row">
-          <label>Вы отдаёте</label>
+          <label for="amountFrom">Вы отдаёте</label>
           <div class="calc__field">
-            <input type="number" id="amountFrom" value="100" min="0" />
-            <select id="currencyFrom">
+            <input type="number" id="amountFrom" name="amountFrom" value="100" min="0" aria-label="Сумма к обмену" />
+            <label for="currencyFrom" class="visually-hidden">Валюта</label>
+            <select id="currencyFrom" name="currencyFrom" aria-label="Выбор валюты">
               <option value="RUB">RUB · Рубль (безнал)</option>
               <option value="CNY">CNY · Юань (безнал)</option>
               <option value="USDT">USDT · Tether (крипто)</option>
@@ -148,11 +187,11 @@
             </select>
           </div>
         </div>
-        <div class="calc__arrow">↓</div>
+        <div class="calc__arrow" aria-hidden="true">↓</div>
         <div class="calc__row">
-          <label>Вы получаете</label>
+          <label for="amountTo">Вы получаете</label>
           <div class="calc__field">
-            <input type="text" id="amountTo" value="" readonly />
+            <input type="text" id="amountTo" name="amountTo" value="" readonly aria-label="Сумма к получению в донгах" />
             <div class="calc__static">VND</div>
           </div>
         </div>
