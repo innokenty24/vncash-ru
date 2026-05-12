@@ -1,0 +1,27 @@
+# Секреты — НИКОГДА не коммитить
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets.json
+credentials.json
+config.local.*
+
+# Токены / пароли
+**/token.txt
+**/bot_token*
+**/api_key*
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Логи
+*.log
+npm-debug.log*
+
+# Node (если когда-нибудь добавите)
+node_modules/
