@@ -92,9 +92,9 @@ function recalc() {
   if (fee > 0 && amt > 0) {
     calcRate.innerHTML = `Курс: 1 ${code} = ${formatVND(rate)} ₫ · <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" style="color:#e11d48;text-decoration:underline">на маленькие суммы действует фикс. комиссия — уточнить в Telegram</a>`;
   } else if (bonus > 0) {
-    calcRate.innerHTML = `Курс: 1 ${code} = ${formatVND(rate)} ₫ · <b style="color:#16a34a">улучшенный курс для крупной суммы 🎉</b>`;
+    calcRate.innerHTML = `Курс: 1 ${code} = ${formatVND(rate)} ₫ · <b style="color:#16a34a">улучшенный курс для крупной суммы</b>`;
   } else {
-    calcRate.textContent = `Курс: 1 ${code} = ${formatVND(rate)} ₫ · без комиссии ✅`;
+    calcRate.textContent = `Курс: 1 ${code} = ${formatVND(rate)} ₫ · без комиссии`;
   }
 }
 

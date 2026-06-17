@@ -180,10 +180,10 @@
             <input type="number" id="amountFrom" name="amountFrom" value="100" min="0" aria-label="Сумма к обмену" />
             <label for="currencyFrom" class="visually-hidden">Валюта</label>
             <select id="currencyFrom" name="currencyFrom" aria-label="Выбор валюты">
-              <option value="RUB">RUB · Рубль (безнал)</option>
-              <option value="CNY">CNY · Юань (безнал)</option>
-              <option value="USDT">USDT · Tether (крипто)</option>
-              <option value="USD">USD · Доллар (наличные, новый образец)</option>
+              <option value="RUB">RUB · Рубль</option>
+              <option value="CNY">CNY · Юань</option>
+              <option value="USDT">USDT · Tether</option>
+              <option value="USD">USD · Доллар</option>
             </select>
           </div>
         </div>
@@ -217,17 +217,17 @@
     <p class="rates__updated" id="ratesUpdated"></p>
     <div class="rates__tiers">
       <div class="tier tier--vip">
-        <div class="tier__title">🎉 Улучшенный курс</div>
+        <div class="tier__title"><svg class="tier__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 5.6L20 11l-5.6 2.4L12 19l-2.4-5.6L4 11l5.6-2.4z"/></svg>Улучшенный курс</div>
         <div class="tier__amount">от 100 000 ₽ · от 1 200 USDT</div>
         <div class="tier__desc">Курс лучше на&nbsp;+2 ₫ за&nbsp;рубль и&nbsp;+100 ₫ за&nbsp;USDT.</div>
       </div>
       <div class="tier tier--best">
-        <div class="tier__title">✅ Стандартный курс</div>
+        <div class="tier__title"><svg class="tier__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Стандартный курс</div>
         <div class="tier__amount">от 20 000 ₽ эквивалента</div>
         <div class="tier__desc">Курс с таблицы выше — без комиссий.</div>
       </div>
       <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="tier tier--link">
-        <div class="tier__title">⚠️ Маленькие суммы</div>
+        <div class="tier__title"><svg class="tier__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.01"/></svg>Маленькие суммы</div>
         <div class="tier__amount">менее 20 000 ₽ эквивалента</div>
         <div class="tier__desc">Фиксированная комиссия — узнать в&nbsp;Telegram →</div>
       </a>
@@ -243,59 +243,59 @@
     </div>
     <div class="services__grid">
       <div class="service">
-        <div class="service__ico">💳</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></div>
         <h3>Безналичные RUB</h3>
         <p>Переводы с российских карт и счетов: Сбербанк, Тинькофф, Альфа, СБП. Выдаём донги во&nbsp;Вьетнаме.</p>
       </div>
       <div class="service">
-        <div class="service__ico">🇨🇳</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V10l7-4.5L19 10v11"/><path d="M9.5 21v-5h5v5"/></svg></div>
         <h3>Безналичные CNY</h3>
         <p>Приём юаней через Alipay, WeChat Pay и банковские переводы в Китае. Быстрый расчёт в донгах.</p>
       </div>
       <div class="service">
-        <div class="service__ico">₿</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 8h4a2 2 0 0 1 0 4h-4zM9.5 12h4.3a2 2 0 0 1 0 4H9.5zM9.5 8v8M11.3 6.4v1.6M11.3 16v1.6"/></svg></div>
         <h3>USDT (крипто)</h3>
         <p>Принимаем USDT — TRC20, ERC20, BEP20. Обмен по актуальному курсу биржи, без скрытых спредов.</p>
       </div>
       <div class="service">
-        <div class="service__ico">💵</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M5.5 9.5h.01M18.5 14.5h.01"/></svg></div>
         <h3>USD наличные (новый образец)</h3>
         <p>Только купюры нового образца (серии 2013+), без надрывов и пятен. Крупные номиналы — по лучшему курсу.</p>
       </div>
       <div class="service">
-        <div class="service__ico">🚗</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"/><path d="M14 9h3.5l3.5 3.5V16h-7z"/><circle cx="7" cy="18" r="1.9"/><circle cx="17" cy="18" r="1.9"/></svg></div>
         <h3>Доставка в Дананге и Нячанге</h3>
         <p>Привезём наличные донги в отель или апартаменты. По другим городам — выдача через банкомат или на&nbsp;счёт.</p>
-        <p class="service__tip">🎁 <b>Бесплатная доставка</b> при обмене от <b>20 000 ₽</b>.</p>
+        <p class="service__tip"><svg class="tip__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M3 12h18M12 8v13"/><path d="M12 8C10.5 4 8 4.2 8 6c0 1.5 2 2 4 2zM12 8c1.5-4 4-3.8 4-2 0 1.5-2 2-4 2z"/></svg> <b>Бесплатная доставка</b> при обмене от <b>20 000 ₽</b>.</p>
       </div>
       <div class="service">
-        <div class="service__ico">🏧</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><rect x="7" y="6" width="10" height="5" rx="1"/><path d="M8 15h8M8 18h5"/></svg></div>
         <h3>Выдача по всему Вьетнаму</h3>
         <p>Снимете донги в ближайшем банкомате <b>Vietcombank, BIDV или OCB</b> либо получите переводом на вьетнамский счёт — Ханой, Хошимин, Хойан, Фукуок и любой другой город.</p>
-        <p class="service__tip">💡 Для сумм <b>от 6 млн&nbsp;₫</b> выгоднее снимать через <b>Vietcombank</b> — выше лимит за одну операцию.</p>
+        <p class="service__tip"><svg class="tip__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.6c.6.6.8 1 .8 2.4h6c0-1.4.2-1.8.8-2.4A6 6 0 0 0 12 3z"/></svg> Для сумм <b>от 6 млн&nbsp;₫</b> выгоднее снимать через <b>Vietcombank</b> — выше лимит за одну операцию.</p>
       </div>
       <div class="service">
-        <div class="service__ico">📲</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="11" height="20" rx="2.5"/><path d="M8.5 19h4"/><path d="M19 6.5v5M21.5 9h-5"/></svg></div>
         <h3>Пополнение вьетнамских счетов и кошельков</h3>
         <p>Пополним ваш счёт в <b>Vietcombank, Techcombank, VPBank</b> и других банках Вьетнама, а также электронные кошельки — <b>MoMo, ZaloPay, VNPay</b> — по всему Вьетнаму.</p>
       </div>
       <div class="service">
-        <div class="service__ico">🐼</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H17a2 2 0 0 1 2 2v1"/><path d="M3 7.5V17a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-3"/><path d="M21 11h-4a1.5 1.5 0 0 0 0 3h4z"/></svg></div>
         <h3>Alipay · юани</h3>
         <p>Пополним ваш <b>Alipay / WeChat Pay</b> в Китае. И наоборот — меняем ваши юани Alipay на <b>рубли, USDT или донги</b>.</p>
       </div>
       <div class="service">
-        <div class="service__ico">🔄</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M4 8l3 3M20 16H7l3 3M20 16l-3-3"/></svg></div>
         <h3>Донги → рубли переводом</h3>
         <p>У вас остались наличные донги? Поменяем их на <b>рубли с переводом</b> на вашу российскую карту или счёт. Без комиссии за перевод.</p>
       </div>
       <div class="service">
-        <div class="service__ico">💵</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M5.5 9.5h.01M18.5 14.5h.01"/></svg></div>
         <h3>RUB, донги, USDT → наличные USD</h3>
         <p>Выдаём <b>наличные доллары США нового образца</b> в обмен на рубли (безнал), донги или USDT. Удобно перед вылетом из Вьетнама.</p>
       </div>
       <a href="https://t.me/vncash_danang" target="_blank" rel="noopener" class="service service--link">
-        <div class="service__ico">💬</div>
+        <div class="service__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-5 4V6a1 1 0 0 1 1-1z"/></svg></div>
         <h3>Не нашли свою задачу?</h3>
         <p>Напишите в&nbsp;Telegram — обсудим нестандартный обмен, крупные суммы или срочную ночную доставку →</p>
       </a>
@@ -443,8 +443,8 @@
       </a>
     </div>
     <div class="contacts__hours">
-      <div class="hours__row">🚗 Доставка (Дананг, Нячанг): ежедневно <b>10:00 – 20:00</b></div>
-      <div class="hours__row">🏧 Банкоматы и перевод на счёт: ежедневно <b>09:00 – 22:00</b></div>
+      <div class="hours__row"><svg class="ico-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"/><path d="M14 9h3.5l3.5 3.5V16h-7z"/><circle cx="7" cy="18" r="1.9"/><circle cx="17" cy="18" r="1.9"/></svg> Доставка (Дананг, Нячанг): ежедневно <b>10:00 – 20:00</b></div>
+      <div class="hours__row"><svg class="ico-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><rect x="7" y="6" width="10" height="5" rx="1"/><path d="M8 15h8M8 18h5"/></svg> Банкоматы и перевод на счёт: ежедневно <b>09:00 – 22:00</b></div>
       <div class="hours__note">Время вьетнамское (UTC+7)</div>
     </div>
   </div>
@@ -479,13 +479,13 @@
     </div>
     <div>
       <h4>Локации</h4>
-      <span>🚗 Доставка: Дананг</span>
-      <span>🚗 Доставка: Нячанг</span>
-      <span>🏧 Банкомат / счёт — весь Вьетнам</span>
+      <span><svg class="ico-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"/><path d="M14 9h3.5l3.5 3.5V16h-7z"/><circle cx="7" cy="18" r="1.9"/><circle cx="17" cy="18" r="1.9"/></svg> Доставка: Дананг</span>
+      <span><svg class="ico-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"/><path d="M14 9h3.5l3.5 3.5V16h-7z"/><circle cx="7" cy="18" r="1.9"/><circle cx="17" cy="18" r="1.9"/></svg> Доставка: Нячанг</span>
+      <span><svg class="ico-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><rect x="7" y="6" width="10" height="5" rx="1"/><path d="M8 15h8M8 18h5"/></svg> Банкомат / счёт — весь Вьетнам</span>
     </div>
   </div>
   <div class="footer__bottom">
-    © 2022&ndash;<span id="year"></span>&nbsp;VNCash&nbsp;Vietnam. Все права защищены.
+    <span class="footer__years">© 2022&ndash;<span id="year"></span></span> VNCash Vietnam. Все права защищены.
   </div>
 </footer>
 
