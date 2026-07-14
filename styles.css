@@ -218,6 +218,7 @@ details p{margin:14px 0 0}
 .contact--wa:hover{background:#25D366}
 .contact--vk:hover{background:#07F}
 .contact--fb:hover{background:#1877F2}
+.contact--map:hover{background:#FC3F1D}
 .contacts__hours{text-align:center;margin-top:32px;color:rgba(255,255,255,.85);display:grid;gap:6px;max-width:560px;margin-left:auto;margin-right:auto;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:20px 24px;border-radius:var(--radius)}
 .hours__row{font-size:.98rem}
 .hours__row b{color:var(--vn-yellow)}
