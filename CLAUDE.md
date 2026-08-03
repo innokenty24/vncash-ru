@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Static one-page marketing site for **VNCash Vietnam** — a currency exchange service operating in Vietnam (Dananag, Nha Trang) for a Russian-speaking audience. Deployed at **https://vncash.ru** via GitHub Pages from the `main` branch of `innokenty24/vncash-ru`.
+Static marketing site for **VNCash Vietnam** — a currency exchange service operating in Vietnam (Dananag, Nha Trang) for a Russian-speaking audience. Deployed at **https://vncash.ru** via GitHub Pages from the `main` branch of `innokenty24/vncash-ru`.
+
+Three pages: the main one-pager (`index.html`) plus two city landing pages, `nhatrang/` and `danang/`.
 
 No build step. No package manager. Just plain HTML/CSS/JS edited in place and pushed to GitHub.
 
@@ -30,6 +32,14 @@ Custom domain is set by the `CNAME` file (contents: `vncash.ru`). Do not delete 
 
 The CSV parser tolerates BOM, Russian header names (`Валюта`, `Курс`, `Обновлено`), and number formats with spaces/commas. If you change the sheet's column layout, update `parseCSV()`.
 
+## City pages (`nhatrang/`, `danang/`)
+
+Each is a standalone `index.html` that reuses `/styles.css` and `/script.js` by **root-absolute** path — relative paths break one directory down. They exist because Yandex sends ~300 impressions/month on queries like «курс донга к рублю на сегодня в нячанге», which the generic homepage title converted at roughly zero.
+
+`script.js` is shared verbatim and assumes certain elements exist: it grabs `amountFrom`, `currencyFrom`, `amountTo`, `calcRate` unguarded and sets `#year`. Any new page must include the calculator block and the footer year span, or the script throws and the rate table stays empty. `.rate__val[data-code]` elements are filled by `renderRates()`; `#ratesUpdated` and the burger menu are optional (guarded).
+
+Each city page carries its own `FAQPage` JSON-LD. Same rule as the homepage: the `acceptedAnswer.text` must match the visible `<details>` answer, so edit both together.
+
 ## Calculator pricing logic
 
 Two pricing knobs in `script.js`:
@@ -51,6 +61,8 @@ The calculator never displays the exact fee — the messaging is intentionally v
 - `robots.txt` and `sitemap.xml` are referenced in Yandex.Webmaster and Google Search Console. Keep `sitemap.xml` clean of anchor URLs (`#rates` etc.) — search engines ignore them and Search Console reports them as noise.
 - `yandex_456166cab07e8e5e.html` — Yandex ownership proof. Deleting it disconnects the site from Yandex.Webmaster.
 - The `<meta name="yandex-verification">` in `index.html` is a redundant second verification method for the same thing.
+- Google verification is DNS-only (`sc-domain:vncash.ru` property, TXT record at reg.ru). There is deliberately no `google-site-verification` meta tag — an empty one used to sit in `index.html` and verified nothing. Don't re-add it.
+- When adding a page: put it in `sitemap.xml`, link it from `index.html` (an orphan page won't get crawled), and request indexing in both consoles. In a Google `sc-domain:` property the sitemap field rejects a relative path — submit the full `https://vncash.ru/sitemap.xml`.
 - The Google Search Console verification is a DNS TXT record at reg.ru, not a file in the repo.
 
 ## Structured data
