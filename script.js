@@ -150,7 +150,8 @@ async function loadFromSheets() {
 }
 
 async function loadFromJSON() {
-  const res = await fetch(`rates.json?t=${Date.now()}`, { cache: 'no-store' });
+  // абсолютный путь — иначе на подстраницах (/danang/, /nhatrang/) фолбэк ищет rates.json внутри папки города
+  const res = await fetch(`/rates.json?t=${Date.now()}`, { cache: 'no-store' });
   if (!res.ok) throw new Error('json fetch failed');
   const data = await res.json();
   if (data.rates) RATES = { ...RATES, ...data.rates };
