@@ -6,7 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static marketing site for **VNCash Vietnam** — a currency exchange service operating in Vietnam (Dananag, Nha Trang) for a Russian-speaking audience. Deployed at **https://vncash.ru** via GitHub Pages from the `main` branch of `innokenty24/vncash-ru`.
 
-Three pages: the main one-pager (`index.html`) plus two city landing pages, `nhatrang/` and `danang/`.
+Four pages: the main one-pager (`index.html`), two city landing pages, `nhatrang/` and `danang/`, and `vietnam-bez-vizy/` (added 2026-10-21).
+
+`vietnam-bez-vizy/` targets «вьетнам без визы» (~3 900 Yandex queries/month, «сколько можно находиться во вьетнаме без визы» ~985). It has an inline 45-day visa-free calculator (entry day = day 1, last day = entry + 44, UTC date math), the shared rate calculator (so `script.js` works), a Trip.com hotels block (`Allianceid=10919812&SID=332850638&trip_sub1=vncash_bezviz`, `rel="sponsored"`) and FAQ JSON-LD. **E-visa CTAs go to the owner's personal Telegram `t.me/krisanqi`, not the exchange group** — e-visa is his personal service. Test until 2027-01-31: kill if <150 visits/month or 0 Trip.com clicks.
+
+**Commit email:** GitHub blocks pushes that expose the private email. The repo's local `user.email` is `71125302+innokenty24@users.noreply.github.com` — keep it.
+
+**IndexNow:** a key file `<hex>.txt` sits in the repo root (added 2026-10-21). Ping new URLs with `https://yandex.com/indexnow?url=<url>&key=<hex>&keyLocation=https://vncash.ru/<hex>.txt`. Don't delete the key file.
 
 No build step. No package manager. Just plain HTML/CSS/JS edited in place and pushed to GitHub.
 
